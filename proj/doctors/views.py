@@ -187,3 +187,27 @@ def recipe(request):
 
 def Chicken_on_Sweetcorn_Puree(request):
     return render(request,'Chicken_on_Sweetcorn_Puree.html')
+
+def Easy_cheesy_tuna_baked_potatoes(request):
+    return render(request,'Easy_cheesy_tuna_baked_potatoes.html')
+
+def lowgibananabread(request):
+    return render(request,'low_gi_banana_bread.html')
+
+def airfryerroastedvegetablesalad(request):
+    return render(request,'air_fryer_roasted_vegetable_salad.html')
+
+def spicyorangebarbequepork(request):
+    return render(request,'spicy_orange.html')
+
+def sweetnsourchicken(request):
+    return render(request,'sweet_n_sour_chicken.html')
+
+def figsstuffedwithricottahoneyandwalnuts(request):
+    return render(request,'frigs_stuffed_with_ricotta_honey_and_walnuts.html')
+
+def simplelemonpeppersalmonforone(request):
+    return render(request,'simple_lemon_pepper_salmon_for_one.html')
+
+def lemontarragonandpoachedchickensandwich(request):
+    return render(request,'lemon_sandwich.html')
