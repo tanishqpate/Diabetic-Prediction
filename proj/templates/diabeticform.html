@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/navbar.css" />
+  <link rel="stylesheet" href="/static/diabeticform.css" />
+
+  <title>Smart Predication</title>
+</head>
+
+<body>
+  <header>
+    <nav class="section__container nav__container">
+      <div class="nav__logo">Smart<span>Predication</span></div>
+      <ul class="nav__links">
+        <li class="link"><a href="/home">Home</a></li>
+        {% comment %} <li class="link"><a href="L R.html">Login</a></li> {% endcomment %}
+        <li class="link"><a href="/doctor/diabitic">DaibetesPredication</a></li>
+        <li class="link"><a href="/doctor/bloodpressure">BPPredication</a></li>
+        <li class="link"><a href="/aboutus">About Us</a></li>
+      </ul>
+      <a href="/" class="btn">Logout</a>
+    </nav>     
+        </div>
+      </div>
+    </div>
+  </header>
+  <section > 
+    <div class="container">
+      <div class="title">Diabetes Prediction </div>
+      <form  method="POST">
+        {% csrf_token %}
+        <div class="user__details">
+          <div class="input__box">
+            <span class="details">Age</span>
+            <input type="number" placeholder="0-12" name="n1" required>
+          </div>
+          <div class="input__box">
+            <span class="details">Gender</span>
+            <select name="n2">
+              <option></option>
+              <option value="0">Male</option>
+              <option value="1">Female</option> 
+            </select>
+            {% comment %} <input type="number" placeholder="" name="n2" required> {% endcomment %}
+          </div>
+          <div class="input__box">
+            <span class="details">Do you Have a High Colastrol</span>
+            <select name="n3">
+              <option></option>
+              <option value="0">Yes</option>
+              <option value="1">No</option> 
+            </select>
+            {% comment %} <input type="number" placeholder="" name="n3" required> {% endcomment %}
+          </div>
+          <div class="input__box">
+            <span class="details">SCholCheck</span>
+            <select name="n4">
+              <option></option>
+              <option value="0">Yes</option>
+              <option value="1">No</option> 
+            </select>
+            {% comment %} <input type="number"  placeholder="" name="n4" required> {% endcomment %}
+          </div>
+          <div class="input__box">
+            <span class="details">BMI</span>
+            <input type="number" placeholder="" name="n5" required>
+          </div>
+          <div class="input__box">
+            <span class="details">Smoker
+            </span>
+            <select name="n6">
+              <option></option>
+              <option value="0">Yes</option>
+              <option value="1">No</option> 
+            </select>
+            {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
+          </div>
+          <div class="input__box">
+            <span class="details">HeartDiseaseorAttack
+            </span>
+            <select name="n7">
+              <option></option>
+              <option value="0">Yes</option>
+              <option value="1">No</option> 
+            </select>
+            {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
+          </div>
+          <div class="input__box">
+            <span class="details">PhysActivity
+            </span>
+            <select name="n8">
+              <option></option>
+              <option value="0">Yes</option>
+              <option value="1">No</option> 
+            </select>
+            {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
+          </div>
+          <div class="input__box">
+            <span class="details">Fruits
+            </span>
+            <select name="n9">
+              <option></option>
+              <option value="0">Yes</option>
+              <option value="1">No</option> 
+            </select>
+            {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
+          </div>
+          <div class="input__box">
+            <span class="details">Veggies
+            </span>
+            <select name="n10">
+              <option></option>
+              <option value="0">Yes</option>
+              <option value="1">No</option> 
+            </select>
+            {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
+          </div>
+          <div class="input__box">
+            <span class="details">HvyAlcoholConsump
+            </span>
+            <select name="n11">
+              <option></option>
+              <option value="0">Yes</option>
+              <option value="1">No</option> 
+            </select>
+            {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
+          </div>
+          <div class="input__box">
+            <span class="details">GenHlth
+            </span>
+            <select name="n12">
+              <option></option>
+              <option value="1">Excellent</option>
+              <option value="2">Very Good</option>
+              <option value="3">Good</option>
+              <option value="4">Fair</option>
+              <option value="5">Poor</option> 
+            </select>
+            {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
+          </div>
+          <div class="input__box">
+            <span class="details">MentHlth
+            </span>
+           
+            <input type="number" placeholder="" name="n13" required>
+          </div>
+          <div class="input__box">
+            <span class="details">PhysHlth
+            </span>
+            <select name="n14">
+              <option></option>
+              <option value="0">Yes</option>
+              <option value="1">No</option> 
+            </select>
+            {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
+          </div>
+          <div class="input__box">
+            <span class="details">DiffWalk
+            </span>
+            <select name="n15">
+              <option></option>
+              <option value="0">Yes</option>
+              <option value="1">No</option> 
+            </select>
+            {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
+          </div>
+          <div class="input__box">
+            <span class="details">Stroke
+            </span>
+            <select name="n16">
+              <option></option>
+              <option value="0">Yes</option>
+              <option value="1">No</option> 
+            </select>
+            {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
+          </div>
+          <div class="input__box">
+            <span class="details">HighBP
+            </span>
+            <select name="n17">
+              <option></option>
+              <option value="0">Yes</option>
+              <option value="1">No</option> 
+            </select>
+            {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
+          </div>
+        
+          {% comment %} <div class="input__box">
+            <span class="details">DiabetesPedigreeFunction</span>
+            <input type="number" placeholder="" name="n7" required>
+          </div>
+          <div class="input__box">
+            <span class="details">Age</span>
+            <input type="number" placeholder="" name="n8" required>
+          </div> {% endcomment %}
+        </div>
+       <!-- <div class="gender__details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender__title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+              <span class="dot one"></span>
+              <span>Male</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span>Female</span>
+            </label>
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span>Prefer not to say</span>
+            </label>
+          </div>
+        </div>-->
+        <div class="button">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+      Result:{{result}} 
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <h3>Smart<span>Predication</span></h3>
+        <p>
+          We are honored to be a part of your healthcare journey and committed
+          to delivering compassionate, personalized, and top-notch care every
+          step of the way.
+        </p>
+        <p>
+          Trust us with your health, and let us work together to achieve the
+          best possible outcomes for you and your loved ones.
+        </p>
+      </div>
+      <div class="footer__col">
+        <h4>About Us</h4>
+        <p><a href="/home">Home</a></p>
+        <p><a href="/aboutus">About Us</a></p>
+        
+        <p><a href="/termandcondition">Terms & Conditions</a></p>
+      </div>
+      <div class="footer__col">
+        <h4>Services</h4>
+        <p><a href="/doctor/bloodpressure">Blood Pressure</a></p>
+        <p><a href="/doctor/diabitic">Diabitic</a></p>
+       
+      </div>
+      <div class="footer__col">
+        <h4>Contact Us</h4>
+        <p>
+          <i class="ri-map-pin-2-fill"></i> Git Collage near katraj cross road, Kalol,Gandhinager
+        </p>
+        <p><i class="ri-mail-fill"></i> Smartprediction2018@gmail.com</p>
+        <p><i class="ri-phone-fill"></i> 7433916127</p>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <div class="footer__bar__content">
+        <p>Copyright © 2023 Web Design HR. All rights reserved.</p>
+        <div class="footer__socials">
+          <span><i class="ri-instagram-line"></i></span>
+          <span><i class="ri-facebook-fill"></i></span>
+          <span><i class="ri-heart-fill"></i></span>
+          <span><i class="ri-twitter-fill"></i></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
