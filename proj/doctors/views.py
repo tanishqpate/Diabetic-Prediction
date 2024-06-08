@@ -185,5 +185,5 @@ def blood_prediction(in_data):
 def recipe(request):
     return render(request,'recipe.html')
 
-def recipe1(request):
-    return render(request,'recipe1.html')
+def Chicken_on_Sweetcorn_Puree(request):
+    return render(request,'Chicken_on_Sweetcorn_Puree.html')
