@@ -6,7 +6,7 @@
     }],
     "routes":[
         {
-            "src":"",
+            "src":"/templates/index.html",
             "dest": "proj/wsgi.py"
         }
     ]
