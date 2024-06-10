@@ -14,20 +14,29 @@
       <div class="nav__logo">Smart<span>Predication</span></div>
       <ul class="nav__links">
         <li class="link"><a href="/home">Home</a></li>
+   
         <li class="link">
-          <select name="nav-select" id="nav-select">
-            <option value="" disabled selected>Prediction</option>
-            <option value="/doctor/diabetic">Diabetic</option>
-            <option value="/doctor/bloodpressure">BloodPressure</option>
-            <script src="/static/navbar.js"></script>
+          <select name="nav-select1" id="nav-select1">
+            <option value="" disabled selected> Diabetic </option>
+            <option value="/doctor/diabetic/information">Information </option>
+            <option value="/doctor/diabetic">Predication </option>
+            <option value="/doctor/diabetic/recipe">Recipes</option>
           </select>
         </li>
-        <li class="link"><a href="/doctor/diabetic/recipe"> Recipes</a></li>
+        <li class="link">
+          <select name="nav-select2" id="nav-select2">
+            <option value="" disabled selected>Blood Pressure</option>
+            <option value="/doctor/bloodpressure/information">  &nbsp; &nbsp; &nbsp; Information &nbsp; &nbsp; &nbsp;</option>
+            <option value="/doctor/bloodpressure"> &nbsp; &nbsp; &nbsp; Prediction &nbsp; &nbsp; &nbsp; </option>
+            <option value="/doctor/bloodpressure/recipe"> &nbsp; &nbsp; &nbsp; Recipes &nbsp; &nbsp; &nbsp;</option>
+          </select>
+        </li>
         <li class="link"><a href="/aboutus">About Us</a></li>
       </ul>
       <a href="/" class="btn">Logout </a>
     </nav>
     </div>
+    <script src="/static/navbar.js"></script>
   </header>
     <h1>Food Recipes</h1>
     <div class="container">
