@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veggie Fajitas</title>
+    <link rel="stylesheet" href="/static/allrecipes.css">
+    <link rel="stylesheet" href="/static/navbar.css">
+</head>
+<body>
+  <header>
+    <nav class="section__container nav__container">
+      <div class="nav__logo">Smart<span>Predication</span></div>
+      <ul class="nav__links">
+        <li class="link"><a href="/home">Home</a></li>
+   
+        <li class="link">
+          <select name="nav-select1" id="nav-select1">
+            <option value="" disabled selected> Diabetic </option>
+            <option value="/doctor/diabetic/information">Information </option>
+            <option value="/doctor/diabetic">Predication </option>
+            <option value="/doctor/diabetic/recipe">Recipes</option>
+          </select>
+        </li>
+        <li class="link">
+          <select name="nav-select2" id="nav-select2">
+            <option value="" disabled selected>Blood Pressure</option>
+            <option value="/doctor/bloodpressure/information">  &nbsp; &nbsp; &nbsp; Information &nbsp; &nbsp; &nbsp;</option>
+            <option value="/doctor/bloodpressure"> &nbsp; &nbsp; &nbsp; Prediction &nbsp; &nbsp; &nbsp; </option>
+            <option value="/doctor/bloodpressure/recipe"> &nbsp; &nbsp; &nbsp; Recipes &nbsp; &nbsp; &nbsp;</option>
+          </select>
+        </li>
+        <li class="link"><a href="/aboutus">About Us</a></li>
+      </ul>
+      <a href="/" class="btn">Logout </a>
+    </nav>
+    </div>
+    <script src="/static/navbar.js"></script>
+  </header>
+    <div class="container">
+        <div class="title-section">
+            <h1>Veggie Fajitas</h1>
+        </div>
+        <section class="details">
+            <img src="/static/bprecipe4.jpeg" alt="Veggie Fajitas">
+            <div class="info">
+                <div class="info-item">
+                    <h2>Details</h2>
+                    <p><strong>Serves:</strong> 6</p>
+                    {% comment %} <p><strong>Yield:</strong> 4</p> {% endcomment %}
+                    <p><strong>To Prep:</strong> 25 mins</p>
+                    <p><strong>Total Time:</strong> 25 mins</p>
+                </div>
+                <div class="nutrition">
+                    <h2>Nutrition per serving</h2>
+                    <p><strong>Calories:</strong> 427kJ</p>
+                    <p><strong>Total fat:</strong> 23g</p>
+                    <p><strong>Saturated fat:</strong> 4g</p>
+                    <p><strong>Carbohydrate:</strong> 49g</p>
+                    <p><strong> Dietary Fibre:</strong> 16g</p>
+                    <p><strong>Sodium:</strong> 343mg</p>
+                    <p><strong>Protien:</strong> 11g</p>
+                </div>
+            </div>
+        </section>
+        <section class="ingredients-method">
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>2 tablespoons extra-virgin olive oil</li>
+                    <li>4 small multicolored bell peppers, thinly sliced</li>
+                    <li>1 large red onion, thinly sliced</li>
+                    <li>1 (15 ounce) can no-salt-added black beans, rinsed</li>
+                    <li> 2 tablespoons water</li>
+                   <li> 1 tablespoon ground cumin </li>
+                    <li> 1 tablespoon chili powder </li>
+                    <li> 2 teaspoons smoked paprika</li> 
+                    <li> 1/2 teaspoon salt</li> 
+                    <li>1/2 teaspoon ground pepper</li>
+                    <li>1/4 cup chopped fresh cilantro, plus cilantro leaves for garnish </li>
+                    <li>1/4 cup lime juice</li>
+                    <li>12 (6-inch) corn tortillas, warmed</li>
+                    <li>1/3 cup crumbled cotija cheese</li>
+                    <li> 2 small avocados, thinly sliced</li>
+                </ul>
+            </div>
+            <div class="method">
+                <h2>Method</h2>
+                <ol>
+                    <li>Heat oil in a large nonstick skillet over medium-high heat. Add bell peppers and onion; cook, stirring occasionally, until tender and slightly charred, about 12 minutes. </li>
+                    <li>Stir in black beans, water, cumin, chili powder, paprika, salt and pepper; cook, stirring often, until the beans are heated through and the spices coat the vegetables, about 4 minutes. Remove from heat; stir in cilantro and lime juice. </li>
+                    <li>Divide the mixture among tortillas; top with cotija and avocado. Garnish with cilantro leaves, if desired. </li>
+                    <li>Enjoy!</li>
+                </ol>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>Smart<span>Predication</span></h3>
+          <p>
+            We are honored to be a part of your healthcare journey and committed
+            to delivering compassionate, personalized, and top-notch care every
+            step of the way.
+          </p>
+          <p>
+            Trust us with your health, and let us work together to achieve the
+            best possible outcomes for you and your loved ones.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>About Us</h4>
+          <p><a href="">Home</a></p>
+          <p><a href="/aboutus">About Us</a></p>
+          
+          <p><a href="/termandcondition">Terms & Conditions</a></p>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <p><a href="/doctor/bloodpressure">Blood Pressure</a></p>
+          <p><a href="/doctor/diabitic">Diabitic</a></p>
+         
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <p>
+            <i class="ri-map-pin-2-fill"></i> Git Collage near katraj cross road, Kalol,Gandhinager
+          </p>
+          <p><i class="ri-mail-fill"></i> Smartprediction2018@gmail.com</p>
+          <p><i class="ri-phone-fill"></i> 7433916127</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <div class="footer__bar__content">
+          <p>Copyright © 2023 Web Design HR. All rights reserved.</p>
+          <div class="footer__socials">
+            <span><i class="ri-instagram-line"></i></span>
+            <span><i class="ri-facebook-fill"></i></span>
+            <span><i class="ri-heart-fill"></i></span>
+            <span><i class="ri-twitter-fill"></i></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

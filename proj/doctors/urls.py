@@ -4,6 +4,7 @@ from django.urls import path
 
 from .views import diabitic,resultl,bloodpressure,recipe,Chicken_on_Sweetcorn_Puree,Easy_cheesy_tuna_baked_potatoes,lemontarragonandpoachedchickensandwich
 from .views import lowgibananabread,airfryerroastedvegetablesalad,sweetnsourchicken,figsstuffedwithricottahoneyandwalnuts,simplelemonpeppersalmonforone,spicyorangebarbequepork
+from .views import bprecipe,grilledegplant,chickprapotato,chickpeaquinoa,veggiesfajita,mushroom,rostedsalmonrice,bpinformation,infromation
 urlpatterns = [
     path("diabetic/",diabitic,name='diabetic'),
     path("result/",resultl,name='result'),
@@ -18,6 +19,14 @@ urlpatterns = [
     path('diabetic/recipe/simplelemonpeppersalmonforone',simplelemonpeppersalmonforone,name='simplelemonpeppersalmonforone'),
     path('diabetic/recipe/lemontarragonandpoachedchickensandwich',lemontarragonandpoachedchickensandwich,name='lemontarragonandpoachedchickensandwich'),
     path('diabetic/recipe/spicyorangebarbequepork',spicyorangebarbequepork,name='spicyorangebarbequepork'),
-
+    path('bloodpressure/recipe',bprecipe,name='bprecipe'),
+    path('bloodpressure/recipe/grilledeggplant',grilledegplant,name='grilledegplant'),
+    path('bloodpressure/recipe/chickprapotato',chickprapotato,name='chickprapotato'),
+    path('bloodpressure/recipe/chickpeaquinoa',chickpeaquinoa,name='chickpeaquinoa'),
+    path('bloodpressure/recipe/veggiesfajitas',veggiesfajita,name='veggiesfajita'),
+    path('bloodpressure/recipe/mushroom',mushroom,name='mushroom'),
+    path('bloodpressure/recipe/rostedsalmonrice',rostedsalmonrice,name='rostedsalmonrice'),
+    path('bloodpressure/information',bpinformation,name='bpinformation'),
+    path('diabetic/information',infromation,name='information'),
 
 ]

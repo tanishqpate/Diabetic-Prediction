@@ -45,12 +45,12 @@
     <div class="container">
       <div class="title">Result </div>
       <form  method="POST">
-        <div class="messages">
+        {% comment %} <div class="messages">
             {% for message in messages %}
                 <div class="{{ message.tags }}">{{ message }}</div>
             {% endfor %}
-        </div>
-        Result:{{result}} 
+        </div> {% endcomment %}
+        Result:   &nbsp; {{result}} 
       </br></br>
         <div class="button">
           &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;   

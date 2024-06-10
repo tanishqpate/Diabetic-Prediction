@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mushroom Stew </title>
+    <link rel="stylesheet" href="/static/allrecipes.css">
+    <link rel="stylesheet" href="/static/navbar.css">
+</head>
+<body>
+  <header>
+    <nav class="section__container nav__container">
+      <div class="nav__logo">Smart<span>Predication</span></div>
+      <ul class="nav__links">
+        <li class="link"><a href="/home">Home</a></li>
+   
+        <li class="link">
+          <select name="nav-select1" id="nav-select1">
+            <option value="" disabled selected> Diabetic </option>
+            <option value="/doctor/diabetic/information">Information </option>
+            <option value="/doctor/diabetic">Predication </option>
+            <option value="/doctor/diabetic/recipe">Recipes</option>
+          </select>
+        </li>
+        <li class="link">
+          <select name="nav-select2" id="nav-select2">
+            <option value="" disabled selected>Blood Pressure</option>
+            <option value="/doctor/bloodpressure/information">  &nbsp; &nbsp; &nbsp; Information &nbsp; &nbsp; &nbsp;</option>
+            <option value="/doctor/bloodpressure"> &nbsp; &nbsp; &nbsp; Prediction &nbsp; &nbsp; &nbsp; </option>
+            <option value="/doctor/bloodpressure/recipe"> &nbsp; &nbsp; &nbsp; Recipes &nbsp; &nbsp; &nbsp;</option>
+          </select>
+        </li>
+        <li class="link"><a href="/aboutus">About Us</a></li>
+      </ul>
+      <a href="/" class="btn">Logout </a>
+    </nav>
+    </div>
+    <script src="/static/navbar.js"></script>
+  </header>
+    <div class="container">
+        <div class="title-section">
+            <h1>Mushroom Stew </h1>
+        </div>
+        <section class="details">
+            <img src="/static/bprecipe5.jpeg" alt="Mushroom Stew ">
+            <div class="info">
+                <div class="info-item">
+                    <h2>Details</h2>
+                    <p><strong>Serves:</strong> 6</p>
+                    {% comment %} <p><strong>Yield:</strong> 4</p> {% endcomment %}
+                    <p><strong>Active Time:</strong> 35 mins</p>
+                    <p><strong>Total Time:</strong> 55 mins</p>
+                </div>
+                <div class="nutrition">
+                    <h2>Nutrition per serving</h2>
+                    <p><strong>Calories:</strong> 400kJ</p>
+                    <p><strong>Total fat:</strong> 10g</p>
+                    <p><strong>Saturated fat:</strong> 1g</p>
+                    <p><strong>Carbohydrate:</strong> 64g</p>
+                    <p><strong> Dietary Fibre:</strong> 12g</p>
+                    <p><strong>Sodium:</strong> 331mg</p>
+                    <p><strong>Protien:</strong> 15g</p>
+                </div>
+            </div>
+        </section>
+        <section class="ingredients-method">
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>1 ounce dried mushrooms, such as porcini or chanterelles </li>
+                    <li>2 cups warm water</li>
+                    <li>3 tablespoons extra-virgin olive oil, divided</li>
+                    <li>2 pounds mixed fresh mushrooms, such as cremini, oyster, pioppino and/or shiitake, roughly chopped (about 14 cups)</li>
+                    <li>1 (8-ounce) bunch kale, stemmed and chopped</li>
+                   <li>5 small carrots, peeled and sliced (1/4-inch) </li>
+                    <li>  1 small yellow onion, chopped </li>
+                    <li> 2 tablespoons tomato paste</li> 
+                    <li> 3 cloves garlic, minced</li> 
+                    <1i> tablespoon chopped fresh rosemary</li>
+                    <li>½ cup dry red wine</li>   
+                    <li>½ cup dry red wine</li>
+                    <li>1 ½ pounds  yellow or red baby potatoes, quartered</li>
+                    <li>½ teaspoon salt</li>
+                    <li> ½ teaspoon ground pepper</li>
+                    <li>¼ cup nutritional yeast</li>
+                    <li>3 cups cooked tricolor quinoa</li>
+
+                </ul>
+            </div>
+            <div class="method">
+                <h2>Method</h2>
+                <ol>
+                    <li>Combine dried mushrooms and warm water in a small bowl; let stand until the mushrooms soften, about 10 minutes. Using a slotted spoon, transfer the mushrooms to a cutting board, reserving the water. Roughly chop the mushrooms and return them to the water. </li>
+                    <li>Heat 1 1/2 tablespoons oil in a large heavy-bottomed pot or Dutch oven over medium-high heat. Add half of the fresh mushrooms; cook, stirring occasionally, until lightly browned, 10 to 12 minutes. Transfer to a plate. Repeat with the remaining 1 1/2 tablespoons oil and fresh mushrooms. </li>
+                    <li>Return the browned mushrooms to the pot and add kale, carrots and onion; cook, stirring occasionally, until the vegetables soften, about 5 minutes. Stir in tomato paste, garlic and rosemary; cook, stirring often, until fragrant, about 1 minute. Add wine and stir to scrape up any browned bits on the bottom of the pan. Stir in broth, potatoes, salt, pepper and the soaked mushrooms with the soaking water. Bring to a simmer over low heat and cook, covered, until the potatoes are tender, about 20 minutes. </li>
+                    <li>Remove from heat and stir in nutritional yeast. Divide quinoa among 6 bowls and top with the stew.</li>
+                    <li>Enjoy!</li>
+                </ol>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>Smart<span>Predication</span></h3>
+          <p>
+            We are honored to be a part of your healthcare journey and committed
+            to delivering compassionate, personalized, and top-notch care every
+            step of the way.
+          </p>
+          <p>
+            Trust us with your health, and let us work together to achieve the
+            best possible outcomes for you and your loved ones.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>About Us</h4>
+          <p><a href="">Home</a></p>
+          <p><a href="/aboutus">About Us</a></p>
+          
+          <p><a href="/termandcondition">Terms & Conditions</a></p>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <p><a href="/doctor/bloodpressure">Blood Pressure</a></p>
+          <p><a href="/doctor/diabitic">Diabitic</a></p>
+         
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <p>
+            <i class="ri-map-pin-2-fill"></i> Git Collage near katraj cross road, Kalol,Gandhinager
+          </p>
+          <p><i class="ri-mail-fill"></i> Smartprediction2018@gmail.com</p>
+          <p><i class="ri-phone-fill"></i> 7433916127</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <div class="footer__bar__content">
+          <p>Copyright © 2023 Web Design HR. All rights reserved.</p>
+          <div class="footer__socials">
+            <span><i class="ri-instagram-line"></i></span>
+            <span><i class="ri-facebook-fill"></i></span>
+            <span><i class="ri-heart-fill"></i></span>
+            <span><i class="ri-twitter-fill"></i></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

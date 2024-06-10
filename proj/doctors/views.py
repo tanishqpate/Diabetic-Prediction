@@ -211,3 +211,30 @@ def simplelemonpeppersalmonforone(request):
 
 def lemontarragonandpoachedchickensandwich(request):
     return render(request,'lemon_sandwich.html')
+
+def bprecipe(request):
+    return render(request,'bprecipes.html')
+
+def grilledegplant(request):
+    return render(request,'grilled_eggplant.html')
+
+def chickprapotato(request):
+    return render(request,'chickpea_potato.html')
+
+def chickpeaquinoa(request):
+    return render(request,'chickpea_quinoa.html')
+
+def veggiesfajita(request):
+    return render(request,'veggies_fajitas.html')
+
+def mushroom(request):
+    return render(request,'mushroom.html')
+
+def rostedsalmonrice(request):
+    return render(request,'Rosted_salmon_rice.html')
+
+def bpinformation(request):
+    return render(request,'information.html')
+
+def infromation(request):
+    return render(request,'information.html')
