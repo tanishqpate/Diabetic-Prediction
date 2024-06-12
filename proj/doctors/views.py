@@ -237,4 +237,10 @@ def bpinformation(request):
     return render(request,'information.html')
 
 def infromation(request):
-    return render(request,'information.html')
+    return render(request,'blood_glucose_monitoring.html')
+
+def familyandcare(request):
+    return render(request,'family_and_care.html')
+
+def kidandteen(request):
+    return render(request,'kid_and_teen.html')

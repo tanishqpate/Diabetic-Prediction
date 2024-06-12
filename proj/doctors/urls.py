@@ -4,7 +4,7 @@ from django.urls import path
 
 from .views import diabitic,resultl,bloodpressure,recipe,Chicken_on_Sweetcorn_Puree,Easy_cheesy_tuna_baked_potatoes,lemontarragonandpoachedchickensandwich
 from .views import lowgibananabread,airfryerroastedvegetablesalad,sweetnsourchicken,figsstuffedwithricottahoneyandwalnuts,simplelemonpeppersalmonforone,spicyorangebarbequepork
-from .views import bprecipe,grilledegplant,chickprapotato,chickpeaquinoa,veggiesfajita,mushroom,rostedsalmonrice,bpinformation,infromation
+from .views import bprecipe,grilledegplant,chickprapotato,chickpeaquinoa,veggiesfajita,mushroom,rostedsalmonrice,bpinformation,infromation,familyandcare,kidandteen
 urlpatterns = [
     path("diabetic/",diabitic,name='diabetic'),
     path("result/",resultl,name='result'),
@@ -28,5 +28,7 @@ urlpatterns = [
     path('bloodpressure/recipe/rostedsalmonrice',rostedsalmonrice,name='rostedsalmonrice'),
     path('bloodpressure/information',bpinformation,name='bpinformation'),
     path('diabetic/information',infromation,name='information'),
+    path('diabetic/familyandcare',familyandcare,name='information1'),
+     path('diabetic/kidandteen',kidandteen,name='information2'),
 
 ]

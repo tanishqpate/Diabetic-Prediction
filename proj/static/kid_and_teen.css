@@ -1,0 +1,60 @@
+        h1
+        {
+            font-size:34px;
+            font-family: Times New Roman, Times, serif;
+            color:rgb(32, 101, 144);
+        }
+         p{
+            font-family: Open Sans, Arial, sans-serif;
+        }
+         h4{
+            font-size:34px;
+            font-family: Times New Roman, Times, serif  ;
+
+        }
+         .container {
+            width: 60%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        ul.a{
+            margin-left: 60px;
+            list-style-type: square;
+            
+        }
+
+        .iframe-container {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            /* height: 80vh; Adjust height as needed */
+        }
+        
+        .iframe-container iframe {
+            /* width: 80%; Adjust width as needed */
+            /* height: 100%; Adjust height as needed */
+            border: none;
+        }
+        .navigation-buttons {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+          }
+          
+          .navigation-buttons a {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 1rem;
+          }
+    
+
+      
+
