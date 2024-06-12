@@ -244,3 +244,15 @@ def familyandcare(request):
 
 def kidandteen(request):
     return render(request,'kid_and_teen.html')
+
+def symptoms(request):
+    return render(request,'bloodpressureinformation.html')
+
+def whentoseedoctor(request):
+    return render(request,'Whentoseeadoctor.html')
+
+def causes(request):
+    return render(request,'Causes.html')
+
+def riskfactor(request):
+    return render(request,'riskfactor.html')
