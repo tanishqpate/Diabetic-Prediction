@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.urls import path
 
 from .views import diabitic,resultl,bloodpressure,recipe,Chicken_on_Sweetcorn_Puree,Easy_cheesy_tuna_baked_potatoes,lemontarragonandpoachedchickensandwich
-from .views import lowgibananabread,airfryerroastedvegetablesalad,sweetnsourchicken,figsstuffedwithricottahoneyandwalnuts,simplelemonpeppersalmonforone,spicyorangebarbequepork
+from .views import lowgibananabread,airfryerroastedvegetablesalad,sweetnsourchicken,figsstuffedwithricottahoneyandwalnuts,simplelemonpeppersalmonforone,spicyorangebarbequepork,bloodglucosw,type1,type2
 from .views import bprecipe,grilledegplant,chickprapotato,chickpeaquinoa,veggiesfajita,mushroom,rostedsalmonrice,bpinformation,infromation,familyandcare,kidandteen,symptoms,whentoseedoctor,causes,riskfactor
 urlpatterns = [
     path("diabetic/",diabitic,name='diabetic'),
@@ -29,10 +29,13 @@ urlpatterns = [
     path('bloodpressure/information',bpinformation,name='bpinformation'),
     path('diabetic/information',infromation,name='information'),
     path('diabetic/familyandcare',familyandcare,name='information1'),
-     path('diabetic/kidandteen',kidandteen,name='information2'),
+    path('diabetic/kidandteen',kidandteen,name='information2'),
     path('bloodpressure/symptoms',symptoms,name='symptoms'),
     path('bloodpressure/whentoseedoctor',whentoseedoctor,name='whentoseedoctor'),
     path('bloodpressure/causes',causes,name='causes'),
     path('bloodpressure/riskfactor',riskfactor,name='riskfactor'),
+    path('diabetic/bloodglucosemonitoring',bloodglucosw,name='bloodglucows'),
+    path('diabetic/type1',type1,name='type1'),
+    path('diabetic/type2',type2,name='type2'),
 
 ]

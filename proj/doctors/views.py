@@ -237,7 +237,7 @@ def bpinformation(request):
     return render(request,'information.html')
 
 def infromation(request):
-    return render(request,'blood_glucose_monitoring.html')
+    return render(request,'just_been_diagnosed.html')
 
 def familyandcare(request):
     return render(request,'family_and_care.html')
@@ -256,3 +256,12 @@ def causes(request):
 
 def riskfactor(request):
     return render(request,'riskfactor.html')
+
+def type1(request):
+    return render(request,'type1.html')
+
+def type2(request):
+    return render(request,'type2.html')
+
+def bloodglucosw(request):
+    return render(request,'blood_glucose_monitoring.html')

@@ -1,0 +1,34 @@
+h1
+        {
+            font-size:34px;
+            font-family: Times New Roman, Times, serif;
+            color:rgb(32, 101, 144);
+        }
+        p{
+            font-family: Open Sans, Arial, sans-serif;
+        }
+
+
+        .container {
+            width: 60%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 20px;
+        }
+        .navigation-buttons {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+          }
+          
+        .navigation-buttons a {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 1rem;
+          }
