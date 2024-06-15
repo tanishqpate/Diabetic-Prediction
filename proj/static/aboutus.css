@@ -88,12 +88,12 @@ ul li {
     margin-bottom: 10px;
 }
 
-a {
+.all {
     color: #0073e6;
     text-decoration: none;
 }
 
-a:hover {
+.all:hover {
     text-decoration: underline;
 }
 

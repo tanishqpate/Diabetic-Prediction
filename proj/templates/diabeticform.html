@@ -44,6 +44,7 @@
   <section > 
     <div class="container">
       <div class="title">Diabetes Prediction </div>
+      {% comment %} yes = 1 and no =2 in this form {% endcomment %}
       <form  method="POST">
         {% csrf_token %}
         <div class="user__details">
@@ -64,8 +65,8 @@
             <span class="details">Do you Have a High Colastrol</span>
             <select name="n3">
               <option></option>
-              <option value="0">Yes</option>
-              <option value="1">No</option> 
+              <option value="1">Yes</option>
+              <option value="0">No</option> 
             </select>
             {% comment %} <input type="number" placeholder="" name="n3" required> {% endcomment %}
           </div>
@@ -73,8 +74,8 @@
             <span class="details">SCholCheck</span>
             <select name="n4">
               <option></option>
-              <option value="0">Yes</option>
-              <option value="1">No</option> 
+              <option value="1">Yes</option>
+              <option value="0">No</option> 
             </select>
             {% comment %} <input type="number"  placeholder="" name="n4" required> {% endcomment %}
           </div>
@@ -87,28 +88,28 @@
             </span>
             <select name="n6">
               <option></option>
-              <option value="0">Yes</option>
-              <option value="1">No</option> 
+              <option value="1">Yes</option>
+              <option value="0">No</option> 
             </select>
             {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
           </div>
           <div class="input__box">
-            <span class="details">HeartDiseaseorAttack
+            <span class="details">Heart Disease or Attack
             </span>
             <select name="n7">
               <option></option>
-              <option value="0">Yes</option>
-              <option value="1">No</option> 
+              <option value="1">Yes</option>
+              <option value="0">No</option> 
             </select>
             {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
           </div>
           <div class="input__box">
-            <span class="details">PhysActivity
+            <span class="details">Physical Activity
             </span>
             <select name="n8">
               <option></option>
-              <option value="0">Yes</option>
-              <option value="1">No</option> 
+              <option value="1">Yes</option>
+              <option value="0">No</option> 
             </select>
             {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
           </div>
@@ -117,8 +118,8 @@
             </span>
             <select name="n9">
               <option></option>
-              <option value="0">Yes</option>
-              <option value="1">No</option> 
+              <option value="1">Yes</option>
+              <option value="0">No</option> 
             </select>
             {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
           </div>
@@ -127,23 +128,23 @@
             </span>
             <select name="n10">
               <option></option>
-              <option value="0">Yes</option>
-              <option value="1">No</option> 
+              <option value="1">Yes</option>
+              <option value="0">No</option> 
             </select>
             {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
           </div>
           <div class="input__box">
-            <span class="details">HvyAlcoholConsump
+            <span class="details">Heavy Alcohol Consumption
             </span>
             <select name="n11">
               <option></option>
-              <option value="0">Yes</option>
-              <option value="1">No</option> 
+              <option value="1">Yes</option>
+              <option value="0">No</option> 
             </select>
             {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
           </div>
           <div class="input__box">
-            <span class="details">GenHlth
+            <span class="details">Genral Health
             </span>
             <select name="n12">
               <option></option>
@@ -156,28 +157,28 @@
             {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
           </div>
           <div class="input__box">
-            <span class="details">MentHlth
+            <span class="details">Mental Health
             </span>
            
             <input type="number" placeholder="" name="n13" required>
           </div>
           <div class="input__box">
-            <span class="details">PhysHlth
+            <span class="details">Physical Health
             </span>
             <select name="n14">
               <option></option>
-              <option value="0">Yes</option>
-              <option value="1">No</option> 
+              <option value="1">Yes</option>
+              <option value="0">No</option> 
             </select>
             {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
           </div>
           <div class="input__box">
-            <span class="details">DiffWalk
+            <span class="details">Diffecult in walk
             </span>
             <select name="n15">
               <option></option>
-              <option value="0">Yes</option>
-              <option value="1">No</option> 
+              <option value="1">Yes</option>
+              <option value="0">No</option> 
             </select>
             {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
           </div>
@@ -186,18 +187,18 @@
             </span>
             <select name="n16">
               <option></option>
-              <option value="0">Yes</option>
-              <option value="1">No</option> 
+              <option value="1">Yes</option>
+              <option value="0">No</option> 
             </select>
             {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
           </div>
           <div class="input__box">
-            <span class="details">HighBP
+            <span class="details">High Blood Pressure
             </span>
             <select name="n17">
               <option></option>
-              <option value="0">Yes</option>
-              <option value="1">No</option> 
+              <option value="1">Yes</option>
+              <option value="0">No</option> 
             </select>
             {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
           </div>
