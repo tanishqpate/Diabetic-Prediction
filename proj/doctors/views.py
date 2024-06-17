@@ -134,36 +134,30 @@ def bloodpressure(request):
 
 def blood_prediction(in_data):
      
-    data = pd.read_csv('static\data.csv')  # Update path as necessary
+    data = pd.read_csv('static\data.csv')  
 
     # Drop the Patient_Number column
     data = data.drop(columns=['Patient_Number'])
 
-    # Check for missing values and fill if necessary
-    # Here we fill missing values with the mean of the respective columns
     data = data.fillna(data.mean())
 
     # Extract features and target variable
-    X = data.drop('Blood_Pressure_Abnormality', axis=1)  # Assuming the target column name is 'Blood_Pressure_Abnormality'
+    X = data.drop('Blood_Pressure_Abnormality', axis=1) 
     y = data['Blood_Pressure_Abnormality']
 
     # Split the data into training/testing sets
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.6, random_state=42)
 
-    # Create logistic regression object with increased max_iter
-    logreg = LogisticRegression(max_iter=1000)  # Increase max_iter value as needed
+    logreg = LogisticRegression(max_iter=1000)  
 
-    # Train the model using the training sets
     logreg.fit(X_train, y_train)
 
-    # Make predictions using the testing set
     y_pred = logreg.predict(X_test)
 
-    # Calculate accuracy percentage
     accuracy = accuracy_score(y_test, y_pred) * 100
 
-    # Example user data with all features except Patient_Number (Ensure the order matches the dataset)
-    user_data = np.array([in_data])   # Replace with actual feature values as necessary
+    
+    user_data = np.array([in_data])   
 
     # Ensure user_data has the correct shape
     if user_data.shape[1] != X_train.shape[1]:
@@ -177,7 +171,7 @@ def blood_prediction(in_data):
     elif user_prediction == 1:
         user_category = "User have a blood pressure"
     else:
-        user_category = "Unknown"  # In case there are more categories
+        user_category = "Unknown"  
 
     return accuracy, user_category
 
