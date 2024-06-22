@@ -33,12 +33,12 @@ h1, h2 {
 h2{
     color: #49beb7;
 }
-a {
+.info {
     color: #49beb7;
     text-decoration: none;
 }
 
-a:hover {
+.info:hover {
     text-decoration: underline;
 }
 

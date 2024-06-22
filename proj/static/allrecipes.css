@@ -1,5 +1,5 @@
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -90,98 +90,7 @@ body {
 .method ol {
   list-style-type: decimal;
 }
-body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
-  color: #333;
-}
 
-.container {
-  max-width: 1100px;
-  margin: 30px auto;
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.title-section {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.title-section h1 {
-  margin: 0;
-  font-size: 2.5em;
-  color: #333;
-}
-
-.details {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-}
-
-.details img {
-  flex: 1;
-  max-width: 60%;
-  border-radius: 8px;
-}
-
-.info {
-  flex: 1;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.info-item, .nutrition {
-  margin-bottom: 20px;
-}
-
-.info-item h2, .nutrition h2 {
-  margin-bottom: 10px;
-  color: #0073e6;
-}
-
-.info-item p, .nutrition p {
-  margin: 5px 0;
-  font-size: 1.1em;
-}
-
-.ingredients-method {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
-.ingredients, .method {
-  flex: 1;
-  padding: 20px;
-}
-
-.ingredients h2, .method h2 {
-  color: #0073e6;
-  margin-bottom: 15px;
-}
-
-.ingredients ul, .method ol {
-  margin: 0;
-  padding-left: 20px;
-  font-size: 1.1em;
-}
-
-.ingredients ul {
-  list-style-type: disc;
-}
-
-.method ol {
-  list-style-type: decimal;
-}
 @media (max-width: 768px) {
   .nav__links {
     flex-direction: column;
