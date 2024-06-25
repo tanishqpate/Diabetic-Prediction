@@ -104,7 +104,7 @@ def bloodpressure(request):
             thyroid = request.POST.get('n13')
 
             Hemoglobin=int(Hemoglobin)
-            Genetic=int(Genetic)
+            Genetic=float(Genetic)
             Age=int(Age)
             bmi=int(bmi)
             sex=int(sex)

@@ -70,6 +70,7 @@ header {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
 }
 
 .nav__container {
@@ -447,6 +448,7 @@ header {
 
 .footer {
   background-color: var(--primary-color-light);
+  font-family: 'Roboto', sans-serif;
 }
 
 .footer__container {

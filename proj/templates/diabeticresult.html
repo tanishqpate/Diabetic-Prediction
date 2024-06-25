@@ -45,6 +45,7 @@
     <div class="container">
       <div class="title">Result </div>
       <form  method="POST">
+        <div class="me">
         {% comment %} <div class="messages">
             {% for message in messages %}
                 <div class="{{ message.tags }}">{{ message }}</div>
@@ -52,6 +53,7 @@
         </div> {% endcomment %}
         Result:   &nbsp; {{result}} 
       </br></br>
+    </div>
         <div class="button">
           &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;   
           <a href="/home" class='btn'>Go to home </a> 

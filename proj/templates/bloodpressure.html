@@ -53,7 +53,7 @@
           </div>
           <div class="input__box">
             <span class="details">Genetic Pedigree Coefficient</span>
-            <input type="number" name="n2" required>
+            <input type="text" placeholder="0 to 1" name="n2" required>
             {% comment %} <input type="number" placeholder="" name="n2" required> {% endcomment %}
           </div>
           <div class="input__box">
@@ -93,7 +93,11 @@
           <div class="input__box">
             <span class="details">Physical activity
             </span>
-                <input type="number" name="n8" required>
+            <select name="n8">
+              <option></option>
+              <option value="45015">Yes</option>
+              <option value="0">No</option> 
+            </select>
             {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
           </div>
           <div class="input__box">
@@ -105,7 +109,13 @@
           <div class="input__box">
             <span class="details">alcohol consumption per day
             </span>
-            <input type="number" name="n10" required>
+            <select name="n10">
+              <option></option>
+              <option value="90">0 to 100</option>
+              <option value="185">101 to 200</option> 
+              <option value="195">201 to 300 </option>
+              <option value="270">301 to 400</option>
+            </select>
             {% comment %} <input type="number" placeholder="" name="n5" required> {% endcomment %}
           </div>
           <div class="input__box">
