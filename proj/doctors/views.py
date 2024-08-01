@@ -64,7 +64,7 @@ def diabitic(request):
 
 def diabetes_prediction(in_data):
   
-    data = pd.read_csv('static\diabetes_data.csv') 
+    data = pd.read_csv('diabetes_data.csv') 
     X = data.drop('Diabetes', axis=1) 
     y = data['Diabetes']
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
@@ -134,7 +134,7 @@ def bloodpressure(request):
 
 def blood_prediction(in_data):
      
-    data = pd.read_csv('static\data.csv')  
+    data = pd.read_csv('data.csv')  
 
     # Drop the Patient_Number column
     data = data.drop(columns=['Patient_Number'])
